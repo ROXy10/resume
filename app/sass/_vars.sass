@@ -1,0 +1,31 @@
+$raleway-bold: "raleway-bold", sans-serif
+$raleway-regular: "raleway-regular", sans-serif
+$raleway-thin: "raleway-thin", sans-serif
+
+$background-color: rgb(22, 10, 47)
+$sup-color: rgb(92, 255, 142)
+
+@mixin transition
+  -webkit-transition: 0.4s ease
+  -moz-transition: 0.4s ease
+  -ms-transition: 0.4s ease
+  -o-transition: 0.4s ease
+  transition: 0.4s ease
+
+@mixin placeholder
+  &:focus::-webkit-input-placeholder
+    color: transparent
+  &:focus::-moz-placeholder
+    color: transparent
+  &:focus:-moz-placeholder
+    color: transparent
+  &:focus:-ms-input-placeholder
+    color: transparent
+  &::-webkit-input-placeholder
+    color: #c0d3cd
+  &::-moz-placeholder
+    color: #c0d3cd /* Firefox 19+ */
+  &:-moz-placeholder
+    color: #c0d3cd /* Firefox 18- */
+  &:-ms-input-placeholder
+    color: #c0d3cd

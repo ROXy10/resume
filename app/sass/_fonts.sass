@@ -1,0 +1,117 @@
+@import "_mixins/font-face"
+//@import "font-icons"
+
++font-face("raleway-bold", "../fonts/Raleway-Bold/Raleway-Bold")
++font-face("raleway-regular", "../fonts/Raleway-Regular/Raleway-Regular")
++font-face("raleway-thin", "../fonts/Raleway-Thin/Raleway-Thin")
++font-face("font-icons", "../fonts/font-icons/font-icons")
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before
+    font-family: "font-icons"
+    font-style: normal
+    font-weight: normal
+    speak: none
+
+    display: inline-block
+    text-decoration: inherit
+    width: 1em
+    margin-right: .2em
+    text-align: center
+    /* opacity: .8 */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal
+    text-transform: none
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120% */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3) */
+.icon
+    &-django:before
+        content: '\e800'
+
+    &-es6:before
+        content: '\e801'
+
+    &-gulp:before
+        content: '\e802'
+
+    &-heroku:before
+        content: '\e803'
+
+    &-phone-circled:before
+        content: '\e804'
+
+    &-javascript:before
+        content: '\e805'
+
+    &-jquery:before
+        content: '\e806'
+
+    &-python:before
+        content: '\e807'
+
+    &-react:before
+        content: '\e808'
+
+    &-rest:before
+        content: '\e809'
+
+    &-sass:before
+        content: '\e80a'
+
+    &-vue:before
+        content: '\e80b'
+
+    &-webpack:before
+        content: '\e80c'
+
+    &-html5:before
+        content: '\e80d'
+
+    &-amazon:before
+        content: '\e80e'
+
+    &-bootstrap:before
+        content: '\e80f'
+
+    &-css3:before
+        content: '\e810'
+
+    &-linkedin-circled:before
+        content: '\e811'
+
+    &-pin:before
+        content: '\e812'
+
+    &-down-circled:before
+        content: '\e813'
+
+    &-left-circled:before
+        content: '\e814'
+
+    &-right-circled:before
+        content: '\e815'
+
+    &-up-circled:before
+        content: '\e816'
+
+    &-github:before
+        content: '\f056'
+
+    &-skype:before
+        content: '\f17e'
